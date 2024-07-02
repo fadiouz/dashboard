@@ -1,0 +1,141 @@
+:root {
+    --color-white: #ffffff;
+    --color-light: #f0eff5;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
+    --color-dark: #27282f;
+    --color-primary: rgb(71, 7, 234);
+    --color-success: rgb(34, 202, 75);
+    --color-danger: rgb(255, 67, 54);
+    --color-warning: rgb(234, 181, 7);
+    --color-purple: rgb(160, 99, 245);
+
+    --color-primary-light: rgba(71, 7, 234, 0.2);
+    --color-success-light: rgba(34, 202, 75, 0.2);
+    --color-danger-light: rgba(255, 67, 54, 0.2);
+    --color-purple-light: rgba(160, 99, 245, 0.2);
+
+    --card-padding: 1.6rem;
+    --padding-1: 1rem;
+    --padding-2: 8px;
+
+    --card-border-radius: 1.6rem;
+    --border-radius-1: 1rem;
+    --border-radius-2: 6px;
+    --text_align:left
+}
+
+/* after end, when js change theme */
+.dark-theme {
+    --color-white: #131316;
+    --color-light: #23232a;
+    --color-dark: #ddd;
+    --color-gray-dark: #adacb5;
+}
+
+.arabic_lang{
+    --text_align:right
+}
+
+main {
+    display: grid;
+    grid-template-columns: 16rem auto;
+    gap: 2rem;
+    width: 96%;
+    margin: 1rem auto 4rem;
+}
+
+table {
+    border: 1px solid var(--color-gray-dark);
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    border: 1px solid var(--color-white);
+    padding: .35em;
+    cursor: pointer;
+}
+
+table tr span{
+    
+    cursor: auto;
+}
+
+table tr:nth-child(even) {
+    background: var(--color-white);
+}
+
+th:first-child {
+    width: 25px;
+    /* تعديل العرض حسب احتياجاتك */
+}
+
+th:nth-child(2){
+    width: 30px;
+}
+table th,
+table td {
+    padding: .625em;
+    text-align: var(--text_align);
+}
+
+table th {
+    background: var(--color-gray-light);
+    color: var(--color-white);
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-button,
+.edit-button {
+    padding: 5px 10px;
+    background-color: #dfdbdb;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.delete-button:hover,
+.edit-button:hover {
+    background-color: #bbb7b7;
+}
+
+.add-user-button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.action_icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.eye_icon {
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+tr:hover{
+    .eye_icon {
+        display: block;
+    }
+}

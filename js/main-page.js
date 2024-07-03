@@ -19,17 +19,21 @@ new Chart(chart, {
                 borderColor: 'blue',
                 borderWidth: 2
             }
-        ]
+        ],
     },
     options: {
-        responsive: true
+        responsive: true,
+        title: {
+            display: true,
+            text: "Users"
+        }
     }
 })
 
-const chart2 = document.querySelector('#chart2').getContext('2d');
+// const chart2 = document.querySelector('').getContext('2d');
 
 // create a new chart instance //
-new Chart(chart2, {
+new Chart("chart2", {
     type: 'line',
     data: {
         labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mart', 'Apr'],
@@ -41,15 +45,13 @@ new Chart(chart2, {
                 borderColor: 'green',
                 borderWidth: 2
             },
-            // {
-            //     label: 'ETH',
-            //     data: [2688, 2922, 3282, 2728, 1940, 1071, 1679, 1554, 1328, 1572, 1294, 1194, 1585, 1677],
-            //     borderColor: 'blue',
-            //     borderWidth: 2
-            // }
         ]
     },
     options: {
-        responsive: true
+        responsive: true,
+        title: {
+            display: true,
+            text: "Sales"
+        }
     }
 })
